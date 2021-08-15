@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Waiting</title>
+    <style>
+        body{
+            background: rgb(0, 20, 4);
+            
+        }
+        *{
+            margin: 0;
+            padding: 0;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .box{
+            height: 200px;
+            width: 200px;
+          
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: white;
+        }
+        .box div{
+            height: 18px;
+            width: 7px;
+            background: #000;
+            border-radius:5px;
+            float: left;
+            position: absolute;
+            transform: translate(-50%, -50%);
+            animation: animate 4s ease infinite;
+        }
+        @keyframes animate{
+            0%,3%{
+                background-color: rgb(131, 245, 169);
+                box-shadow: 5px 5px 30px rgb(131, 245, 169),
+                -5px -5px 30px rgb(131, 245, 169) ;
+            }
+            97%,100%{
+                background-color: #000;
+            }
+        }
+        .box div:nth-child(1){
+            top:15%;
+            left: 50%;
+            animation-delay: 0.25s;
+        }
+        .box div:nth-child(2){
+            top:14%;
+            left: 64%;
+            transform: rotateZ(30deg);
+            animation-delay: 0.5s;
+        }
+        .box div:nth-child(3){
+            top:22%;
+            left: 75%;
+            transform: rotateZ(55deg);
+            animation-delay: 0.75s;
+        }
+        .box div:nth-child(4){
+            top:35%;
+            left: 82%;
+            transform: rotateZ(70deg);
+            animation-delay: 1s;
+        }
+        .box div:nth-child(5){
+            top:48%;
+            left: 83%;
+            transform: translate(-50%, -50%);
+            transform: rotateZ(90deg);
+            animation-delay: 1.25s;
+        }
+        .box div:nth-child(6){
+            top:62%;
+            left: 80%;
+            transform: rotateZ(115deg);
+            animation-delay:1.5s;
+        }
+        .box div:nth-child(7){
+            top:72%;
+            left: 72%;
+            transform: rotateZ(130deg);
+            animation-delay: 1.75s;
+        }
+        .box div:nth-child(8){
+            top:78%;
+            left: 62%;
+            transform: rotateZ(150deg);
+            animation-delay: 2s;
+        }
+        
+        .box div:nth-child(9){
+            top:85%;
+            left: 50%;
+            animation-delay: 2.25s;
+        }
+        .box div:nth-child(10){
+            top:77%;
+            left: 34%;
+            transform: rotateZ(210deg);
+            animation-delay: 2.75s;
+        }
+        .box div:nth-child(11){
+            top:70%;
+            left: 23%;
+            transform: rotateZ(230deg);
+            animation-delay: 3s;
+        }
+        .box div:nth-child(12){
+            top:60%;
+            left: 16%;
+            transform: rotateZ(250deg);
+            animation-delay: 3.25s;
+        }
+        .box div:nth-child(13){
+            top:48%;
+            left: 13%;
+            transform: translate(-50%, -50%);
+            transform: rotateZ(90deg);
+            animation-delay: 3.5s;
+        }
+        .box div:nth-child(14){
+            top:33%;
+            left: 15%;
+            transform: rotateZ(290deg);
+            animation-delay: 3.75s;
+        }
+        .box div:nth-child(15){
+            top:22%;
+            left: 22%;
+            transform: rotateZ(310deg);
+            animation-delay: 4s;
+        }
+        .box div:nth-child(16){
+            top:14%;
+            left: 33%;
+            transform: rotateZ(330deg);
+            animation-delay: 8s;
+        }
+        span{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 27px;
+            font-weight: bold;
+           
+        }
+       .circle{
+           height: 120px;
+           width: 120px;
+           
+           color: #000;
+          
+           position: absolute;
+           top:50%;
+           left: 50%;
+           transform: translate(-50%, -50%);
+           border-radius: 50%;
+           animation: animatetext 1s linear infinite;
+       }
+       @keyframes animatetext{
+            0%,5%{
+            color: rgb(131, 245, 169);
+            text-shadow: 3px 3px 30px rgb(131, 245, 169);
+            }
+            95%,100%{
+                color: #000;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+             
+          
+          
+        </div>
+        <div class="circle"><span>Loading</span></div>
+    </div>
+</body>
+</html>
